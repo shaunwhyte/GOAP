@@ -1,5 +1,4 @@
-# COMP313 	Goal Oriented Action Planning 	
-## Shaun Whyte 300406535
+## GOAP Goal Orientated Action Planning
 
 Link to demonstration
 https://www.youtube.com/watch?v=Os2ckoNvScM
