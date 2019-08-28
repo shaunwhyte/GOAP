@@ -1,4 +1,4 @@
-## GOAP Goal Orientated Action Planning
+# GOAP Goal Orientated Action Planning
 
 Link to demonstration
 https://www.youtube.com/watch?v=Os2ckoNvScM
@@ -8,7 +8,7 @@ Goal Oriented Action planning is a smarter method for creating Artificial Intell
 By using a goal oriented action planning system the advanced AI systems can be created. The decoupled arrangement of the states in a GOAP system fixes this issue of complex FSMs. Using GOAP means that adding new actions to an agent is quite simple. States can be dynamically added to the system so new paths to a goal can be established during runtime. 
 In my demonstration this is evident with the so called “Close Shop Button”. A pie shop can be closed, resulting in the Farmer moving to the next path to the goal, which will be going to the other shop. GOAP allows for AI agents to be able to change the way they behave, based off the state that the world is currently in. 
 
-# Written Walkthrough
+### Written Walkthrough
 
 In this simulation, the farmer has a goal of eating. One way he can satisfy this goal is if we give him a free pie via the “Give Free Pie” button.
 Another way the farmer can satisfy his goal is by purchasing a pie from one of the pie shops.
@@ -23,7 +23,7 @@ The buttons give “Free Pie” and “Give 5 Dollars” shows how the farmer wi
 The other way the user can affect the scenario is by clicking the buttons which close and open the pie shops. When a pie shop gets closed that means that the farmer can no longer go to that shop. He will then try to take the shortest path to the goal, which will be to walk to the other shop.
 Real GOAP planning systems can search for new best cost paths as its executing its current path, and switch over if it finds a better path. My demonstration is too simple for this, and will execute a path unless an action fails, like when a shop is closed. It will then determine the next path to take. If we close both of the pie shops, then the farmer may stop(as long as there's no free pies and he has no money), this is because there will be no possible way to reach the goal.
 
-# Understanding how the base code works.
+### Understanding how the base code works.
 
 Simply put, the agents who are going to be performing actions must have a GOAPAgent class attached to the gameobject as well as a class implementing the “IGOAP” interface. This interface defines some key behaviours for the agent. One thing it defines is what the goal for agent is.
 For the Farmer, the goal is to “eat”, shown below.
@@ -48,7 +48,7 @@ The FEAR AI system referenced below uses a three state FSM to orchestrate the sy
 To conclude, the GOAP demonstration shows some key features of a GOAP AI system. Mainly finding the best cost path to a goal, where the game world is altered, meaning that the paths to the goal also get alterated. My simple example shows how the agent can handle quite a range of different world states and adjusts accordingly . If I were to have more time, I would be interested in researching how to implement a multiple goal system, where goals have a priority that gets adjusted based on the state of the world. More advanced paths would then be generated, where the desired goal is changing, and if it can't be complemented at a given time, then another goal may run. 
 
 
-# Sources
+### Sources
 https://alumni.media.mit.edu/~jorkin/gdc2006_orkin_jeff_fear.pdf
 https://gamedevelopment.tutsplus.com/tutorials/goal-oriented-action-planning-for-a-smarter-ai--cms-20793
 https://medium.com/@vedantchaudhari/goal-oriented-action-planning-34035ed40d0b
